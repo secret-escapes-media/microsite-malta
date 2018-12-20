@@ -11,41 +11,68 @@
 
     {% include page/banner.html %}
 
+
+
+
+    <!-- intro
+    <div class="bv-drag-panorama" id="x" style="background:url('http://pipsum.com/2560x240.jpg');">axis: 'x'</div>-->
+    <div class=" vpad--xl bg--light " >
+      <div class="container">
+        <div class="width width--xl text--center text--xxl   ">
+
+          <div class="space--sm "></div>
+
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="content-spacing section-spacing">
 
       <!-- loops through section file for page content -->
       {% for section in site.data.sections %}
-        <div id="{{section.id}}" class="js-nav-section vpad--xxxxl {% cycle 'bg--white', 'bg--light' %}">
-          <div class="container">
-
-            <div class="row row--valign-center row--gutters-lg row--6-6">
-              <div class="col">
-                <div class="title title--xxl">{{section.title}}</div>
-                <p>{{section.description}}</p>
-              </div>
-              <div class="col">
-                <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
-              </div>
-            </div>
-
-            <div class="space--xxl"></div>
-
-            <div class="bg--grey text--center boxpad--xl">
-              <div class="title title--xs">{{section.pois.title}}</div>
-              <div class="space--sm"></div>
-              <div class="row row--constant-6-6 row--lg-4-4-4 row--xxxl-2-2-2-2-2 row--gutters-sm">
-                {% for poi in section.pois.items %}
-                <div class="col">
-                  <div id="tracking-poi-{{poi.id}}" class="js-open-modal bg-img bg-img--3-2" data-open-modal="{{poi.id}}" style="background-image: url('{{site.img}}/img.jpg');"></div>
+          <div id="{{section.id}}" class="bv-parallax js-nav-section vpad--xxl" style="background-image: url('{{site.img}}/content/{{section.id}}.jpg');" >
+            <div class="container ">
+              <div class="row row--valign-center row--gutters-md row--6-6 text--xxl text--white text--bold">
+                <div class="col--9 boxpad--xl">
+                  <div class=" title title--xl bv-headline-divider bv-lineheight" >{{section.title}}</div>
+                  <div class="space--xs"></div>
+                  <p>{{section.description}} </p>
                 </div>
-                {% endfor %}
+                <div class="col--3">
+                  <div class="" style=""></div>
+                </div>
               </div>
+              <div class="space--xl"></div>
+              <div class="row row--gutters-md  " style=" padding-bottom:30px;">
+
+                  {% for poi in section.pois.items %}
+
+                  <div id="tracking-poi-{{poi.id}}" class="col col--lg-6 col--xl-4 text--center js-open-modal" data-open-modal="{{poi.id}}">
+                    <div class="bg--white " style="cursor: pointer;" >
+                      <div class="highlight__image bv-bg-img bg-img bg-img--16-9" style="background-image:url('{{site.img}}/content/gallery/{{poi.id}}.jpg'); "></div>
+                      <div class="boxpad--md " >
+                          <div class="space--xxs"></div>
+                          <div class="text text--xxxl text--normal text--upper">{{poi.title}}</div>
+                          <div class="space--xxs"></div>
+                          <div class="bv-box-height text text--lg">{{poi.description}}</div>
+                          <div class="title title--sm" style="margin-top:-5px; margin-bottom:5px;">...</div>
+                          <div class="text text--xl text--bold text--m-red">Weiterlesen</div>
+                          <div class="space--xxs"></div>
+                      </div>
+                    </div>
+                  </div>
+
+              {% endfor %}
+
+
+                </div>
+
             </div>
-
-
           </div>
-        </div>
-      {% endfor %}
+
+        {% endfor %}
 
       <!-- Offers section -->
       <div id="offers" class="js-nav-section">

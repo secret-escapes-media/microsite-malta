@@ -1,1 +1,229 @@
 // general styles for the project that wouldn't be a reuseable component
+
+
+
+/* ==========================================================================
+ hero-panorama
+========================================================================== */
+
+// panorama
+
+.bv-hero-panorama {
+  width:8192px;
+  background-image: url('../img/content/hero-panorama.jpg');
+  animation-name: example;
+  animation-duration: 300s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {left:-4000px; top:0px;}
+  100% {left:0px; top:0px;}
+
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+  0%   {left:-400px; top:0px;}
+  100% {left:0px; top:0px;}
+
+}
+
+
+// draggable
+
+ .bv-drag-panorama {
+
+   width: 820px;
+   height: 400px;
+   background-position: bottom;
+   //display: inline-block;
+   animation-name: example2;
+   animation-duration: 5s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+   }
+
+
+
+/* ==========================================================================
+    Dividers & Alignment
+========================================================================== */
+
+.bv-lineheight{}
+
+
+.bv-title-divider::after{
+     content: url(../img/icons/maltesan-cross.png);
+     display: block;
+     margin-top: -50px;
+     transform: scale(.4);
+
+     @include bp($md) {
+       content: url(../img/icons/maltesan-cross.png);
+       display: block;
+       margin-top: -50px;
+       transform: scale(.5);
+
+     }
+
+     @include bp($xl) {
+       content: url(../img/icons/maltesan-cross.png);
+       display: block;
+       margin-top: -120px;
+       transform: scale(.65);
+
+     }
+   }
+
+  .bv-headline-divider::after {
+    content: url(../img/icons/maltesan-cross.svg);
+    display: block;
+    margin: 5px 0 -10px 0;
+    text-align: left;
+    width: 20px;
+    transform: scale(1.1);
+
+    @include bp($md) {
+      content: url(../img/icons/maltesan-cross.svg);
+      display: block;
+      text-align: left;
+      margin: -9px 0 -7px 2px;
+      transform: scale(1.5);
+
+    }
+  }
+
+   /* ==========================================================================
+      Gallery - Thumbnails
+      ========================================================================== */
+
+   .bv-box-height{
+     height: 65px;
+     overflow: hidden;
+
+     @include bp($md){
+       height: 70px;
+       overflow: hidden; }
+   }
+
+
+   .bv-clearfix {
+     overflow: auto;
+   }
+
+   /* ==========================================================================
+      Parallax & DRAWINGS
+      ========================================================================== */
+
+   .bv-parallax{
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+       &--left   {
+         background-attachment: fixed;
+         background-position: 32% 50%;
+         background-repeat: no-repeat;
+         background-size: cover;}
+
+
+       &--right   {
+         background-attachment: fixed;
+         background-position: 60% 50%;
+         background-repeat: no-repeat;
+         background-size: cover;}
+
+       &--darkest   {
+         background-attachment: fixed;
+         background-color: rgba(5,20,40,0.9);
+         background-blend-mode: multiply;
+         background-position: center;
+         background-size: cover;}
+
+       &--darker   {
+         background-attachment: fixed;
+         background-color: rgba(5,20,40,0.7);
+         background-blend-mode: multiply;
+         background-position: center;
+         background-size: cover;}
+
+       &--dark   {
+         background-attachment: fixed;
+         background-color: rgba(5,20,40,0.5);
+         background-blend-mode: multiply;
+         background-position: center;
+         background-size: cover;}
+
+       &--lighter   {
+         background-attachment: fixed;
+         background-color: rgba(250,250,250,0.7);
+         background-blend-mode: lighten;
+         background-position: center;
+         background-size: cover;
+         }
+
+       &--light   {
+         background-attachment: fixed;
+         background-color: rgba(250,250,250,0.5);
+         background-blend-mode: color;
+         background-position: center;
+         background-size: cover; }
+
+       &--white   {
+         background-attachment: fixed;
+         background-color: rgba(250,250,250,0.8);
+         background-blend-mode: overlay;
+         background-position: center;
+         background-size: cover; }
+
+   }
+
+
+   @media only screen and (max-width: 1024px) {
+
+   .bv-remove-bg{
+     background-image: none!important;
+
+     &--black{
+       background-image: none!important;
+       background-color: $black;}
+   }
+
+   .bv-parallax{
+         background-attachment: scroll;
+         background-size: cover;
+
+       &--darkest   {
+         background-attachment: scroll;
+         background-size: cover;
+       }
+       &--darker   {
+         background-attachment: scroll;
+         background-size: cover;
+       }
+       &--dark   {
+         background-attachment: scroll;
+         background-size: cover;
+       }
+       &--lighter   {
+         background-attachment: scroll;
+         background-size: cover;
+         background-color: none;
+       }
+       &--light   {
+         background-attachment: scroll;
+         background-size: cover;
+         background-color: none;
+       }
+       &--white   {
+        background-attachment: scroll;
+        background-size: cover;
+        background-color: none;
+       }
+     }
+   }

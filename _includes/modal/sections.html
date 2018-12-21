@@ -10,13 +10,13 @@
     {% for section in site.data.sections %}
       {% for item in section.pois.items %}
 
-      <div class="modal modal--series is-closed" data-modal-id="{{item.id}}" data-modal-group="{{section.id}}">
-          <div class="js-close-modal modal__close "></div>
-          <div class="js-modal-nav modal__nav modal__nav--next " data-nav-direction="next"></div>
+      <div class="modal modal--series is-closed" data-modal-id="{{item.id}}" data-modal-group="{{section.id}}" >
+          <div class="js-close-modal modal__close " style="margin:44px 0px;"></div>
+          <div class="js-modal-nav modal__nav modal__nav--next "  data-nav-direction="next"></div>
           <div class="js-modal-nav modal__nav modal__nav--previous " data-nav-direction="previous"></div>
-          <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/gallery/{{item.id}}.jpg');"></div>
+          <div class="bg-img bg-img--16-9 " style="background-image: url('{{site.img}}/content/gallery/{{item.id}}.jpg');"></div>
           <div class="modal__content text--xl">
-            <div class="title title--md text--left text--m-red text--upper">{{item.title}}</div>
+            <div class="title title--md text--left text--m-red text--upper">{{item.title}} {{item.months}}</div>
             <div  class="space--xs"></div>
             <p>{{item.description}}</p>
             <div  class="space--xs"></div>

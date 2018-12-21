@@ -3,6 +3,8 @@
 .bg {
   &--white { background-color: $white; }
   &--light { background-color: $grey-lightest; }
+  &--black  { background-color: $black; }
+  &--darker  { background-color: $grey-darkest; }
   &--dark  { background-color: $grey-dark; }
   &--img   { @include background-attributes; }
   &__fixed {

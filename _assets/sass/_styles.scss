@@ -26,10 +26,6 @@
 }
 
 
-
-
-
-
 /* ==========================================================================
     Dividers & Alignment
 ========================================================================== */
@@ -91,10 +87,56 @@
        overflow: hidden; }
    }
 
-
    .bv-clearfix {
      overflow: auto;
    }
+
+.bv-horizontal-scroll{
+  display: flex;
+  min-width: 95%;
+  margin-left: 20px;
+  //min-height: 300px;
+  overflow-x: auto;
+  //background-color: #000;
+
+//  @include bp($sm){ margin-left: 25px; }
+  @include bp($lg){ margin-left: 30px; }
+/*  @include bp($md){ margin-left: 30px;
+  min-width: 100%;}*/
+
+}
+.bv-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/*$xxxl: 1200px;
+$xxl:  970px;
+$xl:   800px;
+$lg:   650px;
+$md:   450px;
+$sm:   330px;*/
+
+.bv-card {
+
+  min-width: 100%;
+  //margin-right: 15px;
+  padding-right: 15px;
+
+ @include bp($md){ min-width: 50%; }
+ @include bp($xl){ min-width: 33.5%; }
+/* @include bp($md){ min-width: 30%; }
+ @include bp($lg){ min-width: 30%; }*/
+/*
+  @include bp($xxl){ min-width: 42vh; }
+  @include bp($xxxl){ min-width: 35vh; }*/
+
+}
+
+$border-radius: $s0/1.5;
+
+.bv-border-radius-top{ border-top-left-radius: $border-radius; border-top-right-radius: $border-radius;}
+
+.bv-border-radius-bottom{ border-bottom-left-radius: $border-radius; border-bottom-right-radius: $border-radius;}
 
    /* ==========================================================================
       Parallax & DRAWINGS

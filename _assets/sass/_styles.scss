@@ -9,7 +9,7 @@
 // panorama
 
 .bv-hero-panorama {
-  width:8192px;
+  //width:8192px;
   background-image: url('../img/content/hero-panorama.jpg');
   animation-name: example;
   animation-duration: 300s;
@@ -24,28 +24,9 @@
   100% {left:0px; top:0px;}
 
 }
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example2 {
-  0%   {left:-400px; top:0px;}
-  100% {left:0px; top:0px;}
-
-}
 
 
-// draggable
 
- .bv-drag-panorama {
-
-   width: 820px;
-   height: 400px;
-   background-position: bottom;
-   //display: inline-block;
-   animation-name: example2;
-   animation-duration: 5s;
-   animation-timing-function: ease;
-   animation-iteration-count: infinite;
-   animation-direction: alternate-reverse;
-   }
 
 
 

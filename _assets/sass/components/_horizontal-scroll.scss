@@ -1,0 +1,106 @@
+
+/* ==========================================================================
+      Gallery - Thumbnails
+========================================================================== */
+
+.bv-box-height{
+     height: 65px;
+     overflow: hidden;
+
+     @include bp($md){
+       height: 70px;
+       overflow: hidden; }
+}
+
+.bv-clearfix {
+     overflow: auto;
+}
+
+.bv-gallery-nav{
+    $icon-size: 6em;
+
+    &--next {
+
+        background-image: url("../img/icons/arrow-right.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba($m-red, 0.8);
+        background-size: 18%;
+        height: $icon-size/2;
+        width: $icon-size;
+        margin: 10px 1px;
+        cursor: pointer;
+
+      }
+
+    &--previous {
+       background-image: url("../img/icons/arrow-left.svg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-color: rgba($m-red, 0.8);
+       background-size: 18%;
+       height: $icon-size/2;
+       width: $icon-size;
+       margin: 10px 1px;
+       cursor: pointer;
+
+       }
+}
+
+.bv-horizontal-scroll{
+
+  display: flex;
+  min-width: 95%;
+  margin-left: 20px;
+  overflow-x: auto;
+  @include bp($lg){ margin-left: 30px; }
+
+}
+
+.bv-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.bv-card {
+
+  min-width: 100%;
+  padding-right: 15px;
+
+
+  @include bp($md){ min-width: 100%; }
+  @include bp($lg){ min-width: 50%; }
+  @include bp($xl){ min-width: 33.5%; }
+
+}
+
+.bv-pointer{cursor: pointer; background-color: #f00;}
+
+.bv-buttons, .bv-button {
+  overflow: hidden;
+	width:200px;
+}
+.bv-buttons {
+  float: left;
+  width: 50%;
+  background-color: #ccc;
+  border: 1px solid #999;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0 0 1px;
+}
+.bv-button  {
+  display: block;
+  background-color: #ccc;
+  border: 1px solid #999;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0 0 1px;
+}
+
+$border-radius: $s0/1.5;
+
+.bv-border-radius-top{ border-top-left-radius: $border-radius; border-top-right-radius: $border-radius;}
+
+.bv-border-radius-bottom{ border-bottom-left-radius: $border-radius; border-bottom-right-radius: $border-radius;}

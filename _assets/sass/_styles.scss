@@ -1,36 +1,121 @@
 // general styles for the project that wouldn't be a reuseable component
 
 
-
 /* ==========================================================================
- hero-panorama
+ hero-youtube
 ========================================================================== */
 
-// panorama
-
-.bv-hero-panorama {
-  //width:8192px;
-  background-image: url('../img/content/hero-panorama.jpg');
-  animation-name: example;
-  animation-duration: 300s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+/* The Modal (background) */
+.bv-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.9);
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-  0%   {left:-4000px; top:0px;}
-  100% {left:0px; top:0px;}
+/* Modal Content */
+.bv-modal-content-details {
+  position: absolute;
+  height: 100%;
+  max-height: 620px;
+  width: 100%;
+  margin: auto;
+  padding:  55px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  overflow: hidden;
 
 }
+
+
+.bv-mySlides {
+  margin: auto;
+  max-width:1000px;
+  width:100%;
+  background-color: #fff;
+
+}
+
+
+.bv-iframe-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; // 16:9 ratio
+  background-color:#000;
+
+}
+
+.bv-iframe-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+/* The Close Button */
+.bv-close {
+  position: absolute;
+  background-size:16px;
+  top: 0px;
+  right: 0px;
+  background-image: url('../img/icons/close.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55px;
+  height: 55px;
+  background-color: $m-red;
+  z-index:999;
+  cursor: pointer;
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+.bv-modal-content-details {
+  padding: 0;
+  max-height: 38vh;
+  height: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+
+.bv-modal-content-details {
+  padding: 0;
+  max-height: 450px;
+  height: 100%;
+  }
+}
+
+
+
+
+
+.bv-disable-scroll {
+  overflow: hidden;
+  & >:not(.bv-modal) {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+}
+
+
 
 
 /* ==========================================================================
     Dividers & Alignment
 ========================================================================== */
 
-.bv-lineheight{}
 
 
 .bv-title-divider::after{
@@ -74,62 +159,120 @@
     }
   }
 
-   /* ==========================================================================
-      Gallery - Thumbnails
-      ========================================================================== */
 
-   .bv-box-height{
+  .bv-offer-divider::after{
+       content: url(../img/icons/maltesan-cross-red.png);
+       display: block;
+       margin-top: -20px;
+       transform: scale(.4);
+
+       @include bp($md) {
+         content: url(../img/icons/maltesan-cross-red.png);
+         display: block;
+         margin-top: -20px;
+         transform: scale(.5);
+
+       }
+
+     }
+
+
+/* ==========================================================================
+      Gallery - Thumbnails
+========================================================================== */
+
+.bv-box-height{
      height: 65px;
      overflow: hidden;
 
      @include bp($md){
        height: 70px;
        overflow: hidden; }
-   }
+}
 
-   .bv-clearfix {
+.bv-clearfix {
      overflow: auto;
-   }
+}
+
+.bv-gallery-nav{
+    $icon-size: 6em;
+
+    &--next {
+
+        background-image: url("../img/icons/arrow-right.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba($m-red, 0.8);
+        background-size: 18%;
+        height: $icon-size/2;
+        width: $icon-size;
+        margin: 10px 1px;
+        cursor: pointer;
+
+      }
+
+    &--previous {
+       background-image: url("../img/icons/arrow-left.svg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-color: rgba($m-red, 0.8);
+       background-size: 18%;
+       height: $icon-size/2;
+       width: $icon-size;
+       margin: 10px 1px;
+       cursor: pointer;
+
+       }
+}
 
 .bv-horizontal-scroll{
+
   display: flex;
   min-width: 95%;
   margin-left: 20px;
-  //min-height: 300px;
   overflow-x: auto;
-  //background-color: #000;
-
-//  @include bp($sm){ margin-left: 25px; }
   @include bp($lg){ margin-left: 30px; }
-/*  @include bp($md){ margin-left: 30px;
-  min-width: 100%;}*/
 
 }
+
 .bv-horizontal-scroll::-webkit-scrollbar {
   display: none;
 }
-
-/*$xxxl: 1200px;
-$xxl:  970px;
-$xl:   800px;
-$lg:   650px;
-$md:   450px;
-$sm:   330px;*/
-
+.bv-pointer{cursor: pointer; }
 .bv-card {
 
   min-width: 100%;
-  //margin-right: 15px;
   padding-right: 15px;
 
- @include bp($md){ min-width: 50%; }
- @include bp($xl){ min-width: 33.5%; }
-/* @include bp($md){ min-width: 30%; }
- @include bp($lg){ min-width: 30%; }*/
-/*
-  @include bp($xxl){ min-width: 42vh; }
-  @include bp($xxxl){ min-width: 35vh; }*/
 
+  @include bp($md){ min-width: 100%; }
+  @include bp($lg){ min-width: 50%; }
+  @include bp($xl){ min-width: 33.5%; }
+
+}
+
+.bv-buttons, .bv-button {
+  overflow: hidden;
+	width:200px;
+}
+.bv-buttons {
+  float: left;
+  width: 50%;
+  background-color: #ccc;
+  border: 1px solid #999;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0 0 1px;
+}
+.bv-button  {
+  display: block;
+  background-color: #ccc;
+  border: 1px solid #999;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0 0 1px;
 }
 
 $border-radius: $s0/1.5;
@@ -138,51 +281,53 @@ $border-radius: $s0/1.5;
 
 .bv-border-radius-bottom{ border-bottom-left-radius: $border-radius; border-bottom-right-radius: $border-radius;}
 
-   /* ==========================================================================
-      Parallax & DRAWINGS
-      ========================================================================== */
 
-   .bv-parallax{
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
 
-       &--left   {
+/* ==========================================================================
+    Parallax
+========================================================================== */
+
+.bv-parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   &--left   {
          background-attachment: fixed;
          background-position: 32% 50%;
          background-repeat: no-repeat;
          background-size: cover;}
 
 
-       &--right   {
+   &--right   {
          background-attachment: fixed;
          background-position: 60% 50%;
          background-repeat: no-repeat;
          background-size: cover;}
 
-       &--darkest   {
+   &--darkest   {
          background-attachment: fixed;
          background-color: rgba(5,20,40,0.9);
          background-blend-mode: multiply;
          background-position: center;
          background-size: cover;}
 
-       &--darker   {
+   &--darker   {
          background-attachment: fixed;
          background-color: rgba(5,20,40,0.7);
          background-blend-mode: multiply;
          background-position: center;
          background-size: cover;}
 
-       &--dark   {
+   &--dark   {
          background-attachment: fixed;
          background-color: rgba(5,20,40,0.5);
          background-blend-mode: multiply;
          background-position: center;
          background-size: cover;}
 
-       &--lighter   {
+   &--lighter   {
          background-attachment: fixed;
          background-color: rgba(250,250,250,0.7);
          background-blend-mode: lighten;
@@ -190,14 +335,14 @@ $border-radius: $s0/1.5;
          background-size: cover;
          }
 
-       &--light   {
+   &--light   {
          background-attachment: fixed;
          background-color: rgba(250,250,250,0.5);
          background-blend-mode: color;
          background-position: center;
          background-size: cover; }
 
-       &--white   {
+   &--white   {
          background-attachment: fixed;
          background-color: rgba(250,250,250,0.8);
          background-blend-mode: overlay;
@@ -207,10 +352,11 @@ $border-radius: $s0/1.5;
    }
 
 
-   @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
    .bv-remove-bg{
      background-image: none!important;
+     background-blend-mode: mixin;
 
      &--black{
        background-image: none!important;
@@ -219,9 +365,11 @@ $border-radius: $s0/1.5;
 
    .bv-parallax{
          background-attachment: scroll;
-         background-size: cover;
+         background-size: 200%;
+         background-position: right top;
+         background-color: $black;
 
-       &--darkest   {
+      &--darkest   {
          background-attachment: scroll;
          background-size: cover;
        }
@@ -244,9 +392,9 @@ $border-radius: $s0/1.5;
          background-color: none;
        }
        &--white   {
-        background-attachment: scroll;
-        background-size: cover;
-        background-color: none;
+         background-attachment: scroll;
+         background-size: cover;
+         background-color: none;
        }
      }
    }

@@ -16,11 +16,11 @@
 
 
     <!-- intro-->
-    <div class=" vpad--xl bg--light" style="background-image: url('{{site.img}}/icons/pattern.png');">
+    <div class=" vpad--xxl bg--light" style="background-image: url('{{site.img}}/icons/pattern.png');">
       <div class="container ">
         <div class="width width--xl text--center text--xxl text--bold" >
 
-          <div class="space--sm "></div>
+
 
 
           <p>Auf dem maltesischen Archipel treffen die Kulturen der Römer, Mauren, Johanniter, Franzosen und Briten auf sizilianische Küche und türkisfarbene Lagunen – und versprechen mediterranes Urlaubsglück für jeden Geschmack. Entdecken Sie die besten Tipps für Malta, die Kulturhauptstadt 2018 Valletta sowie die Inseln Gozo und Comino.</p>
@@ -32,7 +32,7 @@
 
       <!-- loops through section file for page content -->
       {% for section in site.data.sections %}
-          <div id="{{section.id}}" class="bv-parallax js-nav-section vpad--xxl" style="background-image: url('{{site.img}}/content/{{section.id}}.jpg');" >
+          <div id="{{section.id}}" class="bv-parallax  js-nav-section vpad--xxl" style="background-image: url('{{site.img}}/content/{{section.id}}.jpg');" >
             <div class="container">
               <div class="  text--xxl text--white text--bold">
 
@@ -48,16 +48,15 @@
 
               </div>
             <div class="space--xl"></div>
-              <div class="row row--gutters-md  ">
-                <div class="bv-horizontal-scroll" style="">
+              <div class="row row--gutters-md">
+
 
                   {% for poi in section.pois.items %}
 
-                    <div id="tracking-poi-{{poi.id}}" class="bv-card text--center js-open-modal" data-open-modal="{{poi.id}}">
-                    <div class="bg--white " style="cursor: pointer;" ></div>
+                    <div id="tracking-poi-{{poi.id}}" class=" col col--lg-6 col--xxl-4 text--center js-open-modal" data-open-modal="{{poi.id}}">
 
                       <div class="highlight__image bv-bg-img bg-img bg-img--16-9 " style="background-image:url('{{site.img}}/content/gallery/{{poi.id}}.jpg');"></div>
-                      <div class="boxpad--md bg--light " >
+                      <div class="boxpad--md bg--light bv-pointer" >
                           <div class="space--xxs"></div>
                           <div class="text text--xxxl text--normal text--upper">{{poi.title}}</div>
                           <div class="space--xxs"></div>
@@ -69,7 +68,8 @@
 
                 </div>
               {% endfor %}
-                </div>
+
+
 
               </div>
 
@@ -81,7 +81,10 @@
       <!-- Offers section -->
       <div id="offers" class="js-nav-section">
         <div class="space--xxxl"></div>
-        <div class="title title--xxxl text--center">Latest Offers</div>
+        <div class="title title--sm text--center">Mediterrane Auszeit</div>
+        <div class="space--sm"></div>
+        <div class="title title--xxxl text--center text--upper bv-offer-divider">auf Malta</div>
+        <div class="text text--xxxl text--center">Entdecken Sie individuelle Boutiquehotels und einzigartige Unterkünfte auf dem Mittelmeer-Archipel.</div>
         <div class="space--xxl"></div>
         {% include offer/all-offers.html %}
         <div class="space--xxxl"></div>

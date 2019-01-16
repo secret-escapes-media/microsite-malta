@@ -1,4 +1,5 @@
 var modal          = $('.js-modal'),
+    modalWrap       = $('.js-modal,.modal__wrap,.modal__item'),
     modalLaunchBtn = $('.js-open-modal'),
     modalCloseBtn  = $('.js-close-modal');
 

@@ -1,0 +1,67 @@
+
+
+/* ==========================================================================
+ hero-panorama
+========================================================================== */
+
+// panorama
+/*
+.bv-hero-panorama {
+  width:8000px;
+  position: absolute;
+  top: 0;
+  left: -1400px;
+  right: 0;
+  bottom: 0;
+
+
+  //@include background-attributes;
+
+  background-image: url('../img/content/hero-panorama.jpg');
+  background-size: 65%;
+  //background-position: 35% 50%;
+  animation-name: example;
+  animation-duration: 250s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+
+  @include bp($lg) {
+
+    background-image: url('../img/content/hero-panorama.jpg');
+    background-size: 95%;
+    left: -240%;
+  }
+
+  @include bp($xl) {
+
+    background-image: url('../img/content/hero-panorama.jpg');
+    background-size: 71%;
+    left: -1400px;
+  }
+
+  @include bp($xxxl) {
+
+    background-image: url('../img/content/hero-panorama.jpg');
+    background-size: 88%;
+    left: -1400px;
+
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  @-webkit-keyframes example {
+    0%   {left: -3000px; top:0px;}
+    100% {left:0px; top:0px;}
+
+  }
+}
+*/
+/*$xxxl: 1200px;
+$xxl:  970px;
+$xl:   800px;
+$lg:   650px;
+$md:   450px;
+$sm:   330px;*/

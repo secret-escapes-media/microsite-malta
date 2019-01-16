@@ -1,12 +1,11 @@
 # Site settings
-title: Destination Single
+title: Malta
 client:
-  name: Client Name
-  link: "#client-name"
+  name: Insel der Vielfalt
+  link: http://bit.ly/2USfwzO
 core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+  Auf dem maltesischen Archipel treffen die Kulturen der Römer, Mauren, Johanniter, Franzosen und Briten auf sizilianische Küche und türkisfarbene Lagunen – und versprechen mediterranes Urlaubsglück für jeden Geschmack
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/de/malta" # the subpath of your site, e.g. /blog/

@@ -1,30 +1,94 @@
-
-
-
-
-<div class="banner text--white">
+<div class="banner">
   <div class="site-header__offset"></div>
-  <div class="banner__bg bv-hero-panorama" ></div>
+  <div class="banner__bg" style="background-image: url('{{site.img}}/content/hero.jpg')"></div>
   <div class="banner__wrap">
-    {% if page.banner.content %}
-      {{page.banner.content | liquify}}
-    {% else %}
-      <div class="container container--no-padding text--center" >
-        {% if page.banner.title-sup %}<h2 class="sub-title--lg text--upper">{{page.banner.title-sup}}</h2>{% endif %}
-        <h1 class="banner-title bv-title-divider" >{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
-        {% if page.banner.title-sub %}<h2 class="sub-title--lg">{{page.banner.title-sub}}</h2>{% endif %}
-      </div>
-    {% endif %}
 
+    <div class="container text--center text--white">
+      <div class="banner__title">
+      {% if page.banner.title-sup %}
+        <h2 class="text--white sub-title--lg sub-title text--upper ">{{page.banner.title-sup}} </h2>
+      {% endif %}
+        <h1 class="banner-title bv-title-divider">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
+      </div>
+      <div class="space--md"></div>
+
+      <div id="bv-myBtn" style="cursor: pointer;" class=" btn btn--red" >Ganzen Film ansehen</div>
+
+    </div>
+
+    <div class="banner__bottom-content">
+      <div class="container container--xl text--center">
+        {{page.banner.intro}}
+      </div>
+    </div>
 
   </div>
-
-
-
-
-
+  <div class="banner__bg-video">
+    <video id="banner-video" src="{{site.img}}/content/malta-short.mp4" height="100%" playsinline loop muted autoplay></video>
+  </div>
   <div class="banner__nav">
     {% include nav/sections.html %}
   </div>
   <div class="site-nav__offset"></div>
 </div>
+
+
+<div id="bv-myModal" class="bv-modal">
+
+  <div class="bv-close" ></div>
+  <div class="bv-modal-content-details">
+    <div class="bv-mySlides">
+    <div class="bv-iframe-ratio" >
+      <iframe class="" src="https://www.youtube.com/embed/LY42C3LqIUo?enablejsapi=1&controls=1&rel=0&autoplay=1&showinfo=0&modestbranding=1" frameborder="0" width="550" height="281" allow="autoplay; encrypted-media" allowfullscreen><img src="{{site.img}}/content/hero.jpg"></iframe></div>
+
+
+    </div>
+
+</div>
+</div>
+
+
+<!-- The Modal
+<div id="bv-myModal" class="bv-modal  ">
+
+
+      <div class="bv-close"></div>
+
+    <div class="bv-modal-content ">
+  <div class="bv-iframe-ratio">
+    <iframe id="" class="" frameborder="0" allowfullscreen="1" width="100%" height="100%" src="https://www.youtube.com/embed/LY42C3LqIUo?enablejsapi=1&controls=1&rel=0&showinfo=0&modestbranding=1"><img src="{{site.img}}/content/hero.jpg"></iframe>
+  </div>
+  </div>
+
+</div> -->
+
+<script>
+// Get the modal
+var modal = document.getElementById('bv-myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("bv-myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("bv-close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+    $('body').addClass('bv-disable-scroll');
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+      $('body').removeClass('bv-disable-scroll');
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+        $('body').removeClass('bv-disable-scroll');
+  }
+}
+</script>

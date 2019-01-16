@@ -1,11 +1,13 @@
 - id: one
+  group: all
   title: Kulturhauptstadt Valletta
   nav-title: Valletta
+  gallery-nav: bv-gallery-nav
   description: "Valletta ist nicht nur die kleinste Hauptstadt eines EU-Staates. Die charmante Stadt wurde schon 1980 in ihrer Gesamtheit in die Liste des UNESCO-Welterbes aufgenommen und ist Kulturhauptstadt 2018. Zwischen mittelalterlichen Gassen, barocken Prunkbauten aus dem typisch gelben Kalksandstein und imposanten Festungsmauern spüren Sie heute noch den Abenteuergeist des alten Ritterordens, der diese Bastion einst&nbsp;erbaute."
 
   pois:
 
-    title:
+    nav:
     items:
 
       - id: highlight1
@@ -14,15 +16,15 @@
 
       - id: highlight2
         title: Museen
-        description: "Von Maltas langer Geschichte erzählen vor allem die vielen Museen in Valletta. Schreiten Sie wie einst Napoléon Bonapartes durch die Gänge des Großmeisterpalastes, den die Malteser nur il-Palazz nennen, oder reisen Sie noch weiter in der Zeit zurück: Im ehemaligen Auberge de Provence wacht das Archäologische Nationalmuseum über eine umfassende Sammlung prähistorischer Kunst mit einzigartigen Objekten wie der „Venus von Malta“. Das maltesische Nationalmuseum der Schönen Künste hingegen zeigt im ehemaligen Admirality House sakrale Kunst und Werke bekannter maltesischer und italienischer&nbsp;Künstler. "
+        description: "Von Maltas langer Geschichte erzählen vor allem die vielen Museen in Valletta. Schreiten Sie wie einst Napoléon Bonapartes durch die Gänge des Großmeisterpalastes, dem il-Palazzi. Im ehemaligen Auberge de Provence wacht das Archäologische Nationalmuseum über prähistorische Kunst mit einzigartigen Objekten, wie der „Venus von Malta“. Das maltesische Nationalmuseum der Schönen Künste hingegen zeigt im ehemaligen Admirality House sakrale Kunst und Werke bekannter maltesischer und italienischer Künstler. Ein einzigartiger Museumsbesuch mit modernster Technik erwartet Sie im&nbsp;neuen&nbsp;MUZA. "
 
       - id: highlight3
         title: Parkanlage Upper Barrakka
-        description: "Am höchsten Punkt auf der St. Peter and St. Paul Bastion, über dem Grand Harbour und mit imposantem Ausblick über die drei klassischen Städte Vittorosia, Senglea und Cospicua, befinden sich die Upper Barrakka Gardens. In den ehemaligen Privatgärten erwarten Sie neben romantischen Arkaden verschiedene Kunstwerke und Denkmäler – zum Beispiel für Winston Churchill und Albert Einstein. Direkt unterhalb der Gärten begrüßt Sie die Saluting Battery täglich um 12 Uhr sowie um 16 Uhr mit einem einzelnen&nbsp;Kanonenschuss."
+        description: "Am höchsten Punkt auf der St. Peter and St. Paul Bastion, über dem Grand Harbour und mit imposantem Ausblick über 'Die Drei Städte' Vittorosia, Senglea und Cospicua, befinden sich die Upper Barrakka Gardens. In den ehemaligen Privatgärten erwarten Sie neben romantischen Arkaden verschiedene Kunstwerke und Denkmäler – zum Beispiel für Winston Churchill und Albert Einstein. Direkt unterhalb der Gärten begrüßt Sie die Saluting Battery täglich um 12 Uhr sowie um 16 Uhr mit einem einzelnen&nbsp;Kanonenschuss."
 
       - id: highlight4
         title: Bootsfahrt
-        description: "Am beeindruckendsten ist die Stadt Valletta vom Wasser aus, denn hier bieten sich bei einer sanften Brise einzigartige Blickwinkel auf die Stadtmauern und Festungen sowie die markante Skyline. Glücklicherweise gibt es diverse Möglichkeiten für einen Perspektivwechsel: Setzen Sie mit der Fähre durch den Hafen von Marsamxett nach Sliema über oder fahren Sie durch den Grand Harbour nach Birgu und werfen Sie dabei einen Blick auf die beiden größten Naturhäfen des&nbsp;Mittelmeers."
+        description: "Erkunden Sie Valletta bei einer klassischen Hafenrundfahrt ganz entspannt vom Wasser aus. Denn hier bieten sich einzigartige Blickwinkel auf die Stadtmauern und Festungen - sowie die markante Skyline. Verpassen Sie nicht die größten Naturhäfen des Mittelmeeres: Grand Harbour und Marsamxett Harbour. Einen abwechslungsreichen Tagesausflug erleben Sie mit einer Katamaranfahrt zu den Nachbarinseln Comino und Gozo. Die atemberaubende Crystal Lagoon, mit ihrem glasklaren Wasser und die Schiffswracks in der blauen Lagune warten ebenfalls darauf von Ihnen entdeckt&nbsp;zu&nbsp;werden. "
 
       - id: highlight5
         title: Strait Street
@@ -35,13 +37,15 @@
 
 
 - id: two
+  group: all
   title: So feiert Malta
   nav-title: Malta feiert
+  gallery-nav: bv-gallery-nav
   description: "Stilvoll, extravagant oder ganz entspannt? Auf Malta wird das ganze Jahr über gefeiert: mit Musik, Kunst und kulinarischen Höhepunkten. Lauschen Sie Bach und Vivaldi in barocken Kulissen, Jazzmusik direkt im Hafen oder Elektro-Beats am Strand. Einen unvergesslichen Anblick bieten auch der bunte Karneval und das legendäre Feuerwerksfestival."
 
   pois:
 
-    title:
+    nav:
     items:
 
       - id: highlight6
@@ -62,12 +66,17 @@
       - id: highlight9
         title: Valletta Film Festival
         months: (Juni)
-        description: "Im Juni verwandelt sich Valletta in ein großes urbanes Kino. 40 Spielfilme und 25 Kurzfilme werden an verschiedenen Orten in der ganzen Stadt gezeigt, außerdem finden Meisterkurse, Konferenzen und Debatten über Film und Zeitgeschehen statt. Wussten Sie, dass Malta ebenfalls einer der beliebtesten Drehorte ist? Regisseure wie Steven Spielberg und Ridley Scott drehten hier bereits und zahlreiche Hollywood-Blockbuster Gladiator, Troja und Der Graf von Monte Christo hier gefilmt wurden? Serienliebhaber werden Kulissen aus  Game of Thrones wiederkennen, wie das Mdina Gate als Tor von King’s&nbsp;Landing."
+        description: "Im Juni verwandelt sich Valletta in ein großes urbanes Kino. 40 Spielfilme und 25 Kurzfilme werden an verschiedenen Orten in der ganzen Stadt gezeigt, außerdem finden Meisterkurse, Konferenzen und Debatten über Film und Zeitgeschehen statt. Wussten Sie, dass Malta ebenfalls einer der beliebtesten Drehorte ist? Regisseure wie Steven Spielberg und Ridley Scott drehten hier und zahlreiche Hollywood-Blockbuster wie Gladiator, Troja und Der Graf von Monte Christo wurden vor Ort gefilmt. Serienliebhaber werden Kulissen aus Game of Thrones wiederkennen, wie das Mdina Gate als Tor von King’s&nbsp;Landing."
 
       - id: highlight10
         title: Jazzfestival Valletta
         months: (Juli)
-        description: "Malta ist ein beliebtes Sprachreiseziel und mit ihren Schwestern Gozo und Comino ein angesagter Tauchspot. Aber auch die junge Musikszene fühlt sich hier zuhause: angefangen beim Geheimtipp, dem alternativen Earth Garden Festival, über das Annie Mac Lost & Found, einer riesigen Strandparty mit etlichen DJ's und Live-Artists, bis zur Isle of MTV Reihe, die neben Konzerten auch Clubnächte und Strandpartys&nbsp;umfasst. "
+        description: "Eines der wichtigsten Ereignisse des Sommers ist das Malta Jazz Festival. Im Hafen von Valletta, vor den Bastionen des Grand Harbour, findet es in Ta' Liesse vor einer einzigartigen Kulisse statt. Musikalische Größen und Newcomer aus der ganzen Welt versammeln sich hier an der Valletta Waterfront, um in warmen Sommernächten gemeinsam unter freiem Himmel zu sitzen, erstklassige mediterrane Küche zu genießen und Jazzmusik zu&nbsp;hören."
+
+      - id: highlight11
+        title: "DJ- und Musik-Events"
+        months:
+        description: "Malta ist ein beliebtes Sprachreiseziel und mit ihren Schwestern Gozo und Comino ein angesagter Tauchspot. Aber auch die junge Musikszene fühlt sich hier zuhause: angefangen beim Geheimtipp, dem alternativen Earth Garden Festival, über das Annie Mac Lost & Found, eine riesige Strandparty mit etlichen DJs und Live-Artists, bis zur Isle of MTV-Reihe, die neben Konzerten auch Clubnächte und Strandpartys&nbsp;umfasst."
 
 
 
@@ -76,34 +85,31 @@
 
 
 - id: three
-  title: Aktiv auf Malta, Gozo & Comino
+  group: all
+  title: Aktiv auf Malta, Gozo &&nbsp;Comino
   nav-title: Tauchen & Co.
+  gallery-nav: bv-gallery-nav
   description: "Nicht nur Kultur gibt es auf Malta im Überfluss. Das Archipel ist auch der ideale Ausgangspunkt für Wander-, Fahrrad- und Kajak-Touren. Abseits der historischen Städte zeigt sich die wilde Seite Maltas mit spektakulären Felsformationen und grünen Tälern, aber auch ursprünglicher Landidylle und verschlafenen Dörfern. Auf dem einzigen Golfplatz der Insel spielen Sie unter royaler&nbsp;Patronage."
 
   pois:
 
-    title:
     items:
 
-      - id: highlight11
+      - id: highlight12
         title: Tauchen
         description: "Das Malta-Archipel bietet alles, was sich Taucher erträumen: glasklares Wasser und rund um die drei Inseln Höhlen, Grotten und Wracks. Während Sie viele der Spots vom Land aus erreichen, sind die Tauchgänge an den Steilküsten und vorgelagerten Riffen mit Bootstouren verbunden. Besonders zu empfehlen ist der Nordwesten von Gozo, wo Sie Unterwasser-Canyons, Kamine, Tunnel und Torbögen erwarten. An der Südküste Gozos liegen die Wracks MV Xlendi, MV Cominoland und MV&nbsp;Karwel."
 
-      - id: highlight12
+      - id: highlight13
         title: Kajaktouren
         description: "Aktive Entdecker erwartet vor den Küsten Maltas und Gozos ein maritimes Abenteuer: Paddeln Sie im Kajak an der Küste entlang und erleben Sie die einzigartige Kulisse individuell in Ihrem Tempo. Eine der schönsten Routen führt vom südlichsten Punkt Gozos über das offene Meer um die kleinere, unbewohnte Insel Comino und wieder zurück zum Startpunkt. Vor Comino befindet sich mit der Blue Lagoon eine kleine Berühmtheit: Die natürliche Lagune ist bekannt für ihr aquamarinfarbenes Wasser sowie spektakuläre Kliffe und&nbsp;Höhlen."
 
-      - id: highlight13
+      - id: highlight14
         title: Outdoorsport
         description: "Die markanten Kalksteinfelsen des maltesischen Archipels sind ideal zum Sportklettern, Bouldern und Deep-Water-Soloing geeignet: Über 1.000 Routen stehen zur Verfügung. Während Felsspalten und Höhlen im Sommer den nötigen Schatten bieten, locken im Winter milde Temperaturen. Auch Fahrradsportler kommen auf ihre Kosten: In den letzten Jahren wurden viele markierte Strecken geschaffen, die das Fahren im Straßenverkehr sicherer machen. Am besten lassen sich die abwechslungsreiche Landschaft und die charmanten Dörfer mit dem Mountainbike&nbsp;erkunden."
 
-      - id: highlight14
-        title: Golf
-        description: "Golfer finden auf Malta mit dem Royal Malta Golf Club ein mediterranes Juwel. Mit Par 68 sowie herausfordernden Par-5-Löchern ist der Kurs für anspruchsvolle Golfer ebenso geeingnet wie für Anfänger. Das Handicap kann zusammen mit PGA-qualifizierten Golflehrern verbessert werden. Im angrenzenden Marsa Sports Club stehen Tennis- und Squash-Plätze, ein Minigolfplatz, eine Bowlingbahn, ein Swimmingpool sowie eine Bar und ein Restaurant zur&nbsp;Verfügung."
-
       - id: highlight15
         title: Wandern
-        description: "Wild romantisch und oft überraschend einsam präsentiert sich Malta außerhalb der größeren Städte. Gesäumt von Fenchel, Klee und Myrte ziehen sich malerische Bauernpfade durch den fruchtbaren Süden, während der Weg im Norden immer wieder von Ziegen- und Schafherdem gekreuzt wird. Auf der Insel finden sich die unterschiedlichsten Wandergebiete, von dramatisch ins Meer stürzenden Klippen und kleinen Buchten über die felsige Heidelandschaft der Garrigue bis zu versteckten Tälern mit üppiger&nbsp;Vegetation."
+        description: "Wild romantisch und oft überraschend einsam präsentiert sich Malta außerhalb der größeren Städte. Gesäumt von Fenchel, Klee und Myrte ziehen sich malerische Bauernpfade durch den fruchtbaren Süden, während der Weg im Norden immer wieder von Ziegen- und Schafherden gekreuzt wird. Auf der Insel finden sich die unterschiedlichsten Wandergebiete, von dramatisch ins Meer stürzenden Klippen und kleinen Buchten über die felsige Heidelandschaft der Garrigue bis zu versteckten Tälern mit üppiger&nbsp;Vegetation."
 
 
 
@@ -112,6 +118,20 @@
 
 
 - id: four
+  group: all
   title: Maltesische Kulinarik
   nav-title: Kulinarik
+  gallery-nav:
   description: "Nirgends spüren Sie die vielfältigen kulturellen Einflüsse, die Malta im Laufe der Geschichte geprägt haben, deutlicher als in der maltesischen Küche. Je nach Jahreszeit hält die Insel deftige Spezialitäten wie die Fischpastete Lampuki Pie, Kanincheneintopf, Bragioli-Rinderrouladen, die Ratatouille-Variante Kapunata und die sogenannte Witwensuppe mit Schafs- oder Ziegenkäse bereit. Typisch maltesisch ist auch das Hobz biz-Zejt – ein mit Olivenöl, Tomaten und Thunfisch garniertes oder gefülltes Brot. Zum Nachtisch werden schließlich knusprig frittierte Kannoli gereicht. Auch der maltesische Wein kann es mit den mediterranen Nachbarn aufnehmen, wie etwa den einheimischen Sorten Gellewza und&nbsp;Ghirghentina."
+
+  pois:
+
+    items:
+
+      - id: highlight16
+        title: Frühstück mit Aussicht
+        description: "Ein Urlaub auf Malta heißt mit allen Sinnen genießen und die vielseitige und außergewöhnliche Küche verspricht ganz besondere Geschmackserlebnisse. In Malta's Hauptstadt Valletta bieten gemütliche Lokalitäten vorwiegend traditionelle Speisen an. Aber auch an den Küstengebieten lässt sich Malta's Küche erleben. Rund um die Spinola Bay haben sich viele Restaurants auf Gerichte mit Meeresfrüchten spezialisiert. In der Inselmitte, wie der kleinen Stadt Mdina, finden sich zahlreiche einheimische Restaurants mit kreativen Speisen in jeder&nbsp;Preisklasse."
+
+      - id: highlight17
+        title: Malta's Nachtleben
+        description: "Das Nachtleben auf Malta ist abwechslungsreich und bunt. Angesagte DJ's locken zum Tanzen in die vielen Top Locations auf die Insel. Valletta's berühmte Waterfront, lädt mit viel Charme zur blauen Stunde. Neben Paceville, dem Party Hotspot, lohnt sich ein Besuch in Rabat. Mit Blick auf die traumhaft schöne, beleuchtete Bastion Mdina, laden auf einem großen Open-Air-Komplex etliche Locations zum Party-Vergnügen ein. Wer es etwas ruhiger mag, findet an der Spinolabay oder den Jazzbars von Valletta seinen musikalischen&nbsp;Ausklang."

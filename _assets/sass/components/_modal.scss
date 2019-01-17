@@ -22,7 +22,7 @@
     right: 0;
     bottom: 0;
     z-index: $z-overlay;
-    background-color: rgba($grey-darker,.9);
+    background-color: rgba($black,.9);
     cursor: pointer;
     overflow: auto;
     // smooth scrolling ios
@@ -41,7 +41,7 @@
     top: -$icon-size;
     height: $icon-size;
     width: $icon-size;
-    background-color: rgba($black,.5);
+    background-color: rgba($m-red,1);
     background-image: url('../img/icons/close.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     cursor: pointer;
     z-index: $z-overlay-upper;
     transition: background-color $transition-time ease;
-    &:hover{ background-color: $black; }
+    &:hover{ background-color: $m-red; }
   }
   &__nav {
     position: fixed;
@@ -59,7 +59,7 @@
     bottom: 0;
     width: 50%;
     height: $icon-size;
-    background-color: rgba($black, .8);
+    background-color: rgba($m-red, 1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: .75em;
@@ -81,14 +81,14 @@
       width: $icon-size;
       height: ($icon-size*2);
       margin-top: -($icon-size);
-      background-color: rgba($black, .5);
+      background-color: rgba($m-red, 1);
       background-size: 1em;
       &--previous { left: -($icon-size); }
       &--next {
         right: -($icon-size);
         border-left: 0;
       }
-      &:hover     { background-color: $black; }
+      &:hover     { background-color: $m-red; }
     }
   }
   &--standard { max-width: $xl; }

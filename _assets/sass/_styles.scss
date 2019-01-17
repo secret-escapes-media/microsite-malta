@@ -94,10 +94,6 @@
   }
 }
 
-
-
-
-
 .bv-disable-scroll {
   overflow: hidden;
   & >:not(.bv-modal) {
@@ -117,6 +113,16 @@
 ========================================================================== */
 
 
+.bv-mob-left {
+   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+ .bv-mob-left {
+   text-align: left;
+ }
+}
 
 .bv-title-divider::after{
      content: url(../img/icons/maltesan-cross.png);
@@ -129,7 +135,6 @@
        display: block;
        margin-top: -50px;
        transform: scale(.5);
-
      }
 
      @include bp($xl) {
@@ -137,44 +142,43 @@
        display: block;
        margin-top: -120px;
        transform: scale(.65);
-
      }
    }
 
-  .bv-headline-divider::after {
+.bv-headline-divider::after {
+  content: url(../img/icons/maltesan-cross.svg);
+  display: block;
+  margin: 5px 0 -10px 0;
+  text-align: left;
+  width: 20px;
+  transform: scale(1.1);
+
+  @include bp($md) {
     content: url(../img/icons/maltesan-cross.svg);
     display: block;
-    margin: 5px 0 -10px 0;
     text-align: left;
-    width: 20px;
-    transform: scale(1.1);
-
-    @include bp($md) {
-      content: url(../img/icons/maltesan-cross.svg);
-      display: block;
-      text-align: left;
-      margin: -9px 0 -7px 2px;
-      transform: scale(1.5);
+    margin: -9px 0 -7px 2px;
+    transform: scale(1.5);
 
     }
   }
 
 
-  .bv-offer-divider::after{
+.bv-offer-divider::after{
+     content: url(../img/icons/maltesan-cross-red.png);
+     display: block;
+     margin-top: -20px;
+     transform: scale(.4);
+
+     @include bp($md) {
        content: url(../img/icons/maltesan-cross-red.png);
        display: block;
        margin-top: -20px;
-       transform: scale(.4);
-
-       @include bp($md) {
-         content: url(../img/icons/maltesan-cross-red.png);
-         display: block;
-         margin-top: -20px;
-         transform: scale(.5);
-
-       }
+       transform: scale(.5);
 
      }
+
+ }
 
 
 /* ==========================================================================
@@ -182,12 +186,12 @@
 ========================================================================== */
 
 .bv-box-height{
-     height: 65px;
-     overflow: hidden;
+  height: 65px;
+  overflow: hidden;
 
-     @include bp($md){
-       height: 70px;
-       overflow: hidden; }
+ @include bp($md){
+   height: 70px;
+   overflow: hidden; }
 }
 
 .bv-clearfix {
@@ -195,34 +199,34 @@
 }
 
 .bv-gallery-nav{
-    $icon-size: 6em;
 
-    &--next {
+  $icon-size: 6em;
 
-        background-image: url("../img/icons/arrow-right.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba($m-red, 0.8);
-        background-size: 18%;
-        height: $icon-size/2;
-        width: $icon-size;
-        margin: 10px 1px;
-        cursor: pointer;
+  &--next {
+    background-image: url("../img/icons/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba($m-red, 0.8);
+    background-size: 18%;
+    height: $icon-size/2;
+    width: $icon-size;
+    margin: 10px 1px;
+    cursor: pointer;
 
-      }
+    }
 
-    &--previous {
-       background-image: url("../img/icons/arrow-left.svg");
-       background-position: center;
-       background-repeat: no-repeat;
-       background-color: rgba($m-red, 0.8);
-       background-size: 18%;
-       height: $icon-size/2;
-       width: $icon-size;
-       margin: 10px 1px;
-       cursor: pointer;
+  &--previous {
+     background-image: url("../img/icons/arrow-left.svg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: rgba($m-red, 0.8);
+     background-size: 18%;
+     height: $icon-size/2;
+     width: $icon-size;
+     margin: 10px 1px;
+     cursor: pointer;
 
-       }
+   }
 }
 
 .bv-horizontal-scroll{
@@ -238,7 +242,10 @@
 .bv-horizontal-scroll::-webkit-scrollbar {
   display: none;
 }
+
 .bv-pointer{cursor: pointer; }
+
+/*
 .bv-card {
 
   min-width: 100%;
@@ -255,6 +262,7 @@
   overflow: hidden;
 	width:200px;
 }
+
 .bv-buttons {
   float: left;
   width: 50%;
@@ -280,7 +288,7 @@ $border-radius: $s0/1.5;
 .bv-border-radius-top{ border-top-left-radius: $border-radius; border-top-right-radius: $border-radius;}
 
 .bv-border-radius-bottom{ border-bottom-left-radius: $border-radius; border-bottom-right-radius: $border-radius;}
-
+*/
 
 
 /* ==========================================================================

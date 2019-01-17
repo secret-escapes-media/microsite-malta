@@ -1,6 +1,6 @@
 <div class="banner">
   <div class="site-header__offset"></div>
-  <div class="banner__bg" style="background-image: url('{{site.img}}/content/hero.jpg')"></div>
+  <div class="banner__bg" ></div>
   <div class="banner__wrap">
 
     <div class="container text--center text--white">
@@ -23,8 +23,19 @@
     </div>
 
   </div>
-  <div class="banner__bg-video">
-    <video id="banner-video" src="{{site.img}}/content/malta-short.mp4" height="100%" playsinline loop muted autoplay></video>
+  <div class="banner__bg-video" style="background-image: url('{{site.img}}/content/hero.jpg')">
+
+    <video controls poster="{{site.img}}/content/hero.jpg"  playsinline loop muted autoplay>
+    <source src="{{site.img}}/content/malta-short.mp4" type="video/mp4">
+
+
+  </video>
+<!--
+    <video id="banner-video" src="{{site.img}}/content/malta-short.mp4" height="100%" playsinline loop muted autoplay>
+      <img src="{{site.img}}/content/hero.jpg" title="Your browser does not support the <video> tag">
+    </video>
+
+    -->
   </div>
   <div class="banner__nav">
     {% include nav/sections.html %}
@@ -48,19 +59,6 @@
 </div>
 
 
-<!-- The Modal
-<div id="bv-myModal" class="bv-modal  ">
-
-
-      <div class="bv-close"></div>
-
-    <div class="bv-modal-content ">
-  <div class="bv-iframe-ratio">
-    <iframe id="" class="" frameborder="0" allowfullscreen="1" width="100%" height="100%" src="https://www.youtube.com/embed/LY42C3LqIUo?enablejsapi=1&controls=1&rel=0&showinfo=0&modestbranding=1"><img src="{{site.img}}/content/hero.jpg"></iframe>
-  </div>
-  </div>
-
-</div> -->
 
 <script>
 // Get the modal

@@ -1,6 +1,6 @@
 - title: "Malta: Meerblick und Nachtleben mit Stil"
   id: InterContinental-Malta
-  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/86984/79c626a3_db31_4412_8813_9436d20c559e.jpg"
+  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/86984/8febd560_9b55_4c05_a25b_3205019de79f.jpg"
   location: InterContinental Malta, Paceville, San Ġiljan, Malta
   description: 5*-Luxus an Maltas lebendiger Küste – inkl. Frühstück, Spa-Gutschein, 1 Flasche Wein & Extras
   price: 50
@@ -18,3 +18,13 @@
   saved: 25
   flight-tag: true
   link: "http://bit.ly/2AVfj6l"
+
+- title: Glamouröser Malta-Urlaub in historischer Villa
+  id: Corinthia-Palace-Hotel
+  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/14945/2f5938e6_d01b_4460_a22c_bf9bf03c9e9a.jpg"
+  location: "Corinthia Palace Hotel & Spa, San Anton, Attard, Malta"
+  description: Traumvilla direkt neben Präsidentenpalast & Gärten inkl. Frühstück, Spa-Zugang & Extras
+  price: 56
+  price-description: pro Person - basierend auf 2 Personen
+  saved: 30
+  link: "http://bit.ly/2WwXBzs"

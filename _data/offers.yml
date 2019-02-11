@@ -1,20 +1,20 @@
-- title: Sonnentage in Malta für Ästheten
-  id: Urban-Valley-Resort
-  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/86717/49285dcc_94f2_408d_ab41_e52759dc7161.jpg"
-  location: "Urban Valley Resort & Spa, San Ġwann, Malta"
-  description: Land-Refugium nahe Valletta, inkl. Flügen, Transfers, Frühstück, 1x Dinner & Extras
-  price: 425
-  price-description: pro Person für 7 Nächte
-  saved: 25
-  flight-tag: true
-  link: "http://bit.ly/2AVfj6l"
-
-- title: Maltesischer 5*-Lifestyle in Bestlage
-  id: Corinthia-St-Georges
-  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/87784/92b1a33c_e547_49d7_8687_66b26d8edfea.jpg"
-  location: "Corinthia St George's Bay, St Julian's, Malta"
-  description: Luxus pur in St. Julian’s – inkl. Spa-Zugang, Restaurant- & Spa-Ermäßigung, Shuttle & Extras
+- title: Stilvolle Sonnenträume auf Malta
+  id: Radisson-Blu
+  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/88320/572beb25_8dea_4b12_aabc_740b4a9db15a.jpg"
+  location: "Radisson Blu Resort St. Julian's, San Ġiljan, Malta"
+  description: Vielseitige Inselauszeit in San Ġiljan – inkl. Frühstück & Extras
   price: 50
   price-description: pro Person - basierend auf 2 Personen
-  saved: 48
-  link: "http://bit.ly/2RZbnfm"
+  saved: 49
+  flight-tag: #
+  link: "http://bit.ly/2DnIG1u"
+
+- title: Inselsommer auf Malta
+  id: Corinthia-St-Georges
+  image: "https://d1x3cbuht6sy0f.cloudfront.net/sales/88328/79c57ea3_b547_44d4_a858_074ee0fdb79c.jpg"
+  location: "Marina Hotel Corinthia Beach Resort, St. Julian's, Malta"
+  description: Exklusives Beachlife an Maltas Ostküste – inkl. Begrüßungsgetränk, Spa-Nutzung & 1 Flasche Wein
+  price: 44
+  price-description: pro Person - basierend auf 2 Personen
+  saved: 57
+  link: "http://bit.ly/2Dqkz2u"
